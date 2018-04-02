@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html lang="">
+    <head>
+        <title>Home </title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='/user/themes/big-picture/assets/css/video.css' rel='stylesheet' type='text/css'>
+
+            <meta name="description" content="Grav is an easy to use, yet powerful, open source flat-file CMS" />
+    
+
+<link rel="icon" href="https://tatita.studio/user/themes/big-picture/images/favicon.png" />
+
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,900' rel='stylesheet' type='text/css'>
+        
+    
+    
+<link href="/user/themes/big-picture/assets/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+<link href="/user/themes/big-picture/assets/css/main.css" type="text/css" rel="stylesheet" />
+
+
+    
+    
+                                    
+<script src="/user/themes/big-picture/assets/js/jquery.min.js" ></script>
+<script src="/user/themes/big-picture/assets/js/jquery.poptrox.min.js" ></script>
+<script src="/user/themes/big-picture/assets/js/jquery.scrolly.min.js" ></script>
+<script src="/user/themes/big-picture/assets/js/jquery.scrollex.min.js" ></script>
+<script src="/user/themes/big-picture/assets/js/skel.min.js" ></script>
+<script src="/user/themes/big-picture/assets/js/util.js" ></script>
+<script src="/user/themes/big-picture/assets/js/main.js" ></script>
+
+
+    </head>
+    <body>
+        <header id="header">
+    <h1 id="logo"><a href="/">tatita.studio</a></h1>
+    <nav id="nav">
+        <ul>
+                        <li><a href="#intro">Intro</a></li>
+                        <li><a href="#what-i-do">Co robimy?</a></li>
+                        <li><a href="#who-i-am">Kim jesteśmy?</a></li>
+                        <li><a href="#my-work">Portfolio</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+    </nav>
+</header>
+
+            
+                                            
+<section id="intro" class="main style1 dark fullscreen" style="background-image: url('https://tatita.studio/user/themes/big-picture/assets/css/images/overlay.png'), url('/images/e/4/8/e/6/e48e61dbc6af411880102cfcc275b754bb39bda0-goryintro2.jpeg');
+">
+    <div class="content container 75%">
+        <header>
+            <h2>Filmy o chwilach.</h2>
+        </header>
+
+        <p>Witaj w <strong>tatita.studio</strong> - miejscu, gdzie <strong>emocje</strong> piszą scenariusze, a <strong>chwile</strong> tworzą sceny. Miejscu gdzie nigdy nie kończą się <strong>pomysły</strong>.</p>
+
+                <footer>
+            <a href="#what-i-do" class="button style2 down">More</a>
+        </footer>
+            </div>
+</section>
+
+                                            
+<section id="what-i-do" class="info main style2 dark fullscreen left" style="background-image: url('https://tatita.studio/user/themes/big-picture/assets/css/images/overlay.png'), url('/images/f/b/3/0/0/fb3000559b433b043da2c6f4fee93b939564dcab-kiniucorobimy.jpeg');
+">
+    <div class="content box style2">
+        <header>
+            <h2>Co robimy</h2>
+        </header>
+        <p>W <strong>tatita.studio</strong> zajmujemy się tworzeniem profesjonalnych materiałów filmowych, oraz konsultingiem w dziedzinie marketingu video. Kręcimy filmy, które są <strong>blisko widza</strong>, a wyglądają i brzmią tak jakby wydarzyły się <strong>naprawdę</strong>.</p>
+    </div>
+
+        <a href="#who-i-am" class="button style2 down anchored">Next</a>
+    </section>
+
+                                            
+<section id="who-i-am" class="info main style2 dark fullscreen right" style="background-image: url('https://tatita.studio/user/themes/big-picture/assets/css/images/overlay.png'), url('/images/2/c/e/0/d/2ce0d1190d4ab53945b24d8440b2da0aeb66af75-jesienkimjestesmy.jpeg');
+">
+    <div class="content box style2">
+        <header>
+            <h2>Kim jesteśmy</h2>
+        </header>
+        <p>Jesteśmy młodymi, kreatywnymi filmowcami. Nasza praca jest, przede wszystkim naszą <strong>pasją</strong>. Wiemy, że filmy stają się coraz ważniejszym elementem wizerunku marki, a nasze oryginalne podejście do nich pozwala nam tworzyć <strong>społeczności</strong> zaangażowanych widzów.</p>
+    </div>
+
+        <a href="#my-work" class="button style2 down anchored">Next</a>
+    </section>
+
+            <section id="my-work" class="main style3 primary">
+    <div class="content container">
+        <header>
+            <h2>Portfolio</h2>
+
+            <p>Współpracujemy z wieloma markami z Łodzi i okolic, ale filmujemy na terenie całej Polski i nie tylko. Realizujemy relacje z eventów, fabularyzowane reklamy, wywiady, dokumenty korporacyjne, a także materiały kulinarne we współpracy z restauracjami.</p>
+        </header>
+
+                <div class="container 75% gallery">
+
+          <div id="video_pop" ></div>
+        <a
+         onclick="onVideoClick('/tatita-bigpic-tmpl/user/pages/01.home/_my-work/pizza.mp4');">
+        </a>
+        <!--Below are the functios This is a comment. Comments are not displayed in the browser-->
+        <script >
+          function onVideoClick(theLink) {
+              document.getElementById("video_pop").innerHTML = "<video controls autoplay id=\"the_Video\"><source src=\""+theLink+"\" type=\"video/mp4\"></video>";
+              document.getElementById("video_pop").style.display="block";
+          }
+
+          function onPopClick() {
+              document.getElementById("video_pop").style.display="none";
+              document.getElementById("video_pop").innerHTML = "";
+          }
+
+          var element = document.getElementById("video_pop");
+
+          element.onclick = (function (onclick) {
+            return function(evt) {
+              // reference to event to pass argument properly
+              evt  = evt || event;
+
+              // onClick even still works in the DOM
+              if (onclick) {
+                onclick(evt);
+              }
+              videoElement = document.getElementById("the_Video")
+              videoElement.pause()
+              // new code that will happen when you click only if you click on the background.
+               if (evt.target == element) { element.style.display="none"; }
+               }
+               })(element.onclick);
+          </script>
+          <!--environment: production-->
+                                            <div class="row 0% images">
+                                    <div class="6u 12u(mobile)">
+                                                <a onclick="onVideoClick('TODO amazon url to movie');"
+                                                   class="image fit from-left">
+                            <img src="/images/f/d/7/0/4/fd70447e438dad21d5f46cba1153f371f1cec487-thumbnaildrugamilosc.jpeg" title="Proin sollicitudin at ipsum ut efficitur" />
+                        </a>
+                    </div>
+                                                                <div class="6u 12u(mobile)">
+                                                <a onclick="onVideoClick('TODO');"
+                                                   class="image fit from-right">
+                            <img src="/images/6/d/b/2/8/6db28af8ef60705362c15cd4f33b6c5e20ecb8a3-thumbnailkeanu.jpeg" title="Etiam congue tellus a rutrum aliquet" />
+                        </a>
+                    </div>
+                                </div>
+                                                            <div class="row 0% images">
+                                    <div class="6u 12u(mobile)">
+                                                <a onclick="onVideoClick('TODO');"
+                                                   class="image fit from-left">
+                            <img src="/images/9/0/a/b/d/90abdab0e13a6a2965d785dd1013d88a0a679677-thumbnailcociekreci.jpeg" title="Maecenas dui tortor" />
+                        </a>
+                    </div>
+                                                                <div class="6u 12u(mobile)">
+                                                <a onclick="onVideoClick('TODO');"
+                                                   class="image fit from-right">
+                            <img src="/images/0/f/5/8/9/0f58926c76c1b5b41ff49a326fc5e5f05c4ead9c-thumbnailbawelna.jpeg" title="Aliquam erat volutpat" />
+                        </a>
+                    </div>
+                                </div>
+                                                            <div class="row 0% images">
+                                    <div class="6u 12u(mobile)">
+                                                <a onclick="onVideoClick('TODO');"
+                                                   class="image fit from-left">
+                            <img src="/images/5/c/1/d/f/5c1df1c312b85a51d83093515911e0df5bf9e183-thumbnailbialy.jpeg" title="Phasellus sed finibus quam" />
+                        </a>
+                    </div>
+                                                                <div class="6u 12u(mobile)">
+                                                <a onclick="onVideoClick('TODO');"
+                                                   class="image fit from-right">
+                            <img src="/images/6/3/7/f/4/637f48dbdd7cc2d2bec336966bd4fdc03a586845-thumbnailss.jpeg" title="Motorland" />
+                        </a>
+                    </div>
+                                </div>
+                                    </div>
+            </div>
+</section>
+
+            <section id="contact" class="main style3 secondary">
+    <div class="content container">
+        <header>
+            <h2>Kontakt</h2>
+            <p>Zapraszamy do kontaktu mailowego pod adresem <a href="/home/_contact/studio@tatita.studio"><strong>studio@tatita.studio</strong></a> lub pod numerem telefonu <strong>881 604 090</strong>. Z przyjemnością odpowiemy na wszystkie Państwa pytania, przygotujemy indywidualną ofertę, lub umówimy się na spotkanie.</p>
+<ul>
+<li><strong><a href="/home/_contact/studio@tatita.studio">studio@tatita.studio</a></strong></li>
+<li><strong>881 604 090</strong></li>
+<li><strong>tatita.studio - Łódź</strong></li>
+</ul>
+        </header>
+
+        
+    </div>
+</section>
+
+    
+        <footer id="footer">
+        <ul class="actions">
+                <li><a href="https://www.twitter.com/" class="icon fa-twitter"></a></li>
+                <li><a href="https://www.facebook.com/tatitastudio" class="icon fa-facebook"></a></li>
+                <li><a href="https://www.instagram.com/" class="icon fa-instagram"></a></li>
+            </ul>
+    
+        <ul class="menu">
+                <li>&copy tatita.studio Łódź 2018</li>
+                <li>Design: based on &copy Big Picture by HTML5 UP</li>
+                <li>Images: tatita.studio</li>
+            </ul>
+    </footer>
+    </body>
+</html>
